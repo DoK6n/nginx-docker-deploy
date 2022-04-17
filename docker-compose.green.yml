@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  nodegreen:
+    build: .
+    ports:
+      - '8001:3000'
+    container_name: nodegreen
+    environment:
+      - PORT=3000
+      - CONTAINER_NAME=nodegreen
+    restart: unless-stopped

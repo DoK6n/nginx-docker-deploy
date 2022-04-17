@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  nodeblue:
+    build: .
+    ports:
+      - '8002:3000'
+    container_name: nodeblue
+    environment:
+      - PORT=3000
+      - CONTAINER_NAME=nodeblue
+    restart: unless-stopped
