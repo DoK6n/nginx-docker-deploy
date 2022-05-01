@@ -2,6 +2,8 @@
 
 cid="$(sudo docker ps -q)"
 
+# git pull command
+
 #first deploy
 if [ -z "$cid" ]; then
   echo '\n실행중인 컨테이너 없음\n'
